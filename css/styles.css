@@ -32,6 +32,9 @@ header {
 }
 
 .nav__links li a{
-    color: skyblue;
+    transition: all 0.3s ease 0s;
 }
 
+.nav__links li a:hover{
+    color: skyblue;
+}
