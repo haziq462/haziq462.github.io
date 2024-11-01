@@ -27,7 +27,7 @@ header {
 }
 
 .nav__links li{
-    display: inline-block;
+    display: inline;
     padding: 0px 20px;
 }
 
