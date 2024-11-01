@@ -10,6 +10,28 @@
 li, a{
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 500;
     font-style: normal;
+    color: white;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a{
+    color: skyblue;
+}
+
