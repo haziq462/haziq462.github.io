@@ -16,13 +16,11 @@
             <a href = "#" class = "logo"> Muhammad
                 <span>Zuhaimi</span></a>
             
-            <i class="bx bx-menu" id="menu-icon"></i>
-
             <nav class="navigation">
                 <ul class="nav__list">
-                    <li ><a href="#">Home</a></li>
-                    <li ><a href="#">About</a></li>
-                    <li ><a href="#">Portfolio</a></li>
+                    <li ><a href="#home">Home</a></li>
+                    <li ><a href="#education">Experience</a></li>
+                    <li ><a href="#Projects">Portfolio</a></li>
                     <li ><a href="resume/Resume_MuhammadZuhaimi.pdf" target="_blank">Resume</a></li>
                 </ul>
             </nav>
@@ -31,18 +29,22 @@
             <div class="home-content">
                 <h1> Hi, It's <span> Muhammad</span></h1>
                 <h3 class="text-animation"> I'm a(n) <span></span></h3>
-                <p> At the University of Texas at Arlington, my academic journey culminates in May 2024 with a Bachelor's degree in Computer Science, woven through with Java and cybersecurity expertise. Our team's project on memory-related vulnerabilities in software systems targeted identifying patterns that could bolster security frameworks. 
+                <p> As a Bachelor's candidate in Computer Science at The University of Texas at Arlington, my academic pursuits are characterized by 
+                    a strong focus on cybersecurity and software development. In my most recent role as an Undergraduate Student Researcher, I delved 
+                    into integrating Large Language Models to enhance tools for detecting zero-day vulnerabilities, a project that culminated in a co-authored publication.
 
-                    Previously, as a Junior Sales Associate at TESO LIFE, I honed collaborative skills and contributed to creating a customer-centric shopping environment. As a researcher and a team player, my goal is to merge technical acuity with real-world applications, striving for technological innovations that enhance security and functionality.</p>
+                    Our team applied this cutting-edge research by analyzing documented CVEs for memory-related vulnerabilities, leading to the development of 
+                    automation scripts that interfaced with symbolic execution tools. With certifications in cybersecurity from Google, I aim to leverage my expertise to 
+                    contribute to secure and robust software solutions.</p>
             
                 <div class="social-icons"> 
-                    <a href="#"><i class='bx bxl-linkedin'></i></a>
-                    <a href="#"><i class='bx bxl-github'></i></a>
-                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/muhammad-zuhaimi-b03482170/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/haziq462" target="_blank" ><i class='bx bxl-github'></i></a>
+                    <a href="https://www.instagram.com/kewlpandas/?hl=en" target="_blank" ><i class='bx bxl-instagram'></i></a>
                 </div>
 
                 <div class="btn-group">
-                    <a href="#contact" class="btn"> Contact</a>
+                    <a href="mailto:haziqzuhaimi@ymail.com" class="btn"> Contact</a>
                 </div>
             </div>
                 <div class="home-img">
@@ -51,7 +53,7 @@
         </section>
 
         <section class="education" id="education">
-            <h2 class="heading"> Education</h2>
+            <h2 class="heading"> Education & Experience</h2>
 
             <div class="timeline-items">
 
@@ -104,6 +106,62 @@
                 </div>
             </div>
         </section>
+
+        <section class="Projects" id="Projects">
+            <h2 class="heading"> Recent Projects </h2>
+            
+            <div class="projects-grids">
+            
+                <div class="project-card">
+                    <img src="/images/CookingCoach.jpg">
+                    <h3> Cooking Coach</h3>
+                    <p> As part of a 4-person Agile team, I developed an Android recipe recommendation app using Java and Firebase.
+                         This app suggests dishes to users based on the ingredients they have available. I actively contributed to the
+                         front-end UI design and implemented interactive graphs and charts using Chart.js to visually represent
+                         macronutrient breakdowns and other dietary information. I successfully overcame challenges to ensure 
+                         seamless display of these visualizations across various devices.</p>
+                    <div class="btn-group">
+                        <div class="btn"><a class="project-links" href="https://github.com/devnaganoolil/CookingCoach" target="_blank"> Github Repo</a></div>
+                    </div>
+                </div>
+            
+                <div class="project-card">
+                    <img src="/images/FindMyCovid.jpg">
+                    <h3> COVID-19 Tracker</h3>
+                    <p> I designed and developed an interactive web application to visualize real-time global COVID-19 data. This 
+                        application integrated the Leaflet API and a COVID-19 API to create a dynamic map that displays real-time pandemic statistics at the country level.</p>
+                    <div class="btn-group">
+                        <div class="btn"><a class="project-links" href="https://github.com/devnaganoolil/Find-My-Covid" target="_blank">Github Repo</a></div>
+                        <div class="btn"><a class="project-links" href="https://websites.uta.edu/cseseniordesign/2024/04/30/findmycovid/" target="_blank">Project Demo</a></div>
+                    </div>
+                </div>
+            
+                <div class="project-card">
+                    <img src="/images/Enhancing.jpg">
+                    <h3> Enhancing Symbolic Execution with LLMs for Vulnerability Detection</h3>
+                    <p> I implemented Large Language Models (LLMs) to significantly enhance the efficiency of zero-day vulnerability detection using symbolic execution tools.
+                        This integration resulted in a 71.43% reduction in runtime. Furthermore, I analyzed over 50 documented CVEs to identify patterns in memory-related vulnerabilities,
+                        deepening my understanding of system security. To streamline the interaction between KLEE and the targeted LLMs, I developed automation scripts. This optimization 
+                        significantly reduced manual effort by 71.43%, leading to a substantial increase in the accuracy and speed of research analysis.</p>
+                    <div class="btn-group">
+                        <div class="btn"><a class="project-links" href="https://sp2024.ieee-security.org/downloads/SP24-posters/sp24posters-final15.pdf" target="_blank">Poster Details</a></div>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+
+        <footer>
+
+
+            <ul>
+                <li ><a href="#home">Home</a></li>
+                <li ><a href="#education">Experience</a></li>
+                <li ><a href="#Projects">Portfolio</a></li>
+
+            </ul>
+
+        </footer>
 
         <script src="script.js"></script>
     </body>
