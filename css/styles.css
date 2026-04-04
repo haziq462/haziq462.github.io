@@ -443,6 +443,7 @@ span{
     gap: 2rem;
     position: relative;
     z-index: 1;
+    align-items: stretch;
 }
 
 .Projects::before{
@@ -466,6 +467,8 @@ span{
     transition: 0.3s ease-in-out;
     box-shadow: 0 18px 36px rgba(34, 47, 57, 0.14);
     backdrop-filter: blur(10px);
+    min-width: 0;
+    height: 100%;
 }
 
 .project-card:hover{
@@ -475,10 +478,40 @@ span{
     box-shadow: 0 24px 44px rgba(34, 47, 57, 0.18);
 }
 .project-card img{
-    width: 20vw;
+    width: min(100%, 20vw);
     border-radius: 1rem;
     box-shadow: 0 14px 28px rgba(23, 32, 39, 0.2);
 }
+
+.project-card p{
+    flex: 1 1 auto;
+}
+
+.project-card .btn-group{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    margin-top: auto;
+}
+
+.project-card .btn-group .btn{
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+}
+
+.project-card .btn-group .btn:only-child{
+    max-width: 16rem;
+    width: min(100%, 16rem);
+    justify-self: center;
+}
+
+.project-card .btn-group .project-links{
+    display: block;
+    width: 100%;
+    color: inherit;
+}
+
 .project-card:hover .btn{
     border: 2px solid white;
     color: white;
@@ -495,6 +528,18 @@ span{
 
 .project-links{
     color: var(--text-dark);
+}
+
+.project-links-stack{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.project-links-stack .btn{
+    width: min(100%, 18rem);
+    box-sizing: border-box;
+    text-align: center;
 }
 
 footer{
