@@ -618,3 +618,33 @@ footer ul li a{
         top: 0;
     }
 }
+
+@media (max-width: 900px){
+    .projects-grids{
+        grid-template-columns: 1fr;
+    }
+
+    .project-card{
+        height: auto;
+        justify-content: flex-start;
+        padding: 2.5rem 1.75rem;
+    }
+
+    .project-card img{
+        width: min(100%, 22rem);
+    }
+
+    .project-card p{
+        flex: initial;
+    }
+
+    .project-card .btn-group{
+        grid-template-columns: 1fr;
+    }
+
+    .project-card .btn-group .btn,
+    .project-links-stack .btn{
+        width: min(100%, 18rem);
+        justify-self: center;
+    }
+}
