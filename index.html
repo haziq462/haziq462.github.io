@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>        
-        <link rel="stylesheet" href="css/styles.css"
+        <link rel="stylesheet" href="css/styles.css?v=2026-project-card-fix">
     </head>
 
     <body>
@@ -22,15 +22,15 @@
                     <li ><a href="#home">Home</a></li>
                     <li ><a href="#education">Experience</a></li>
                     <li ><a href="#Projects">Portfolio</a></li>
-                    <li ><a href="resume/Resume_MuhammadZuhaimi.pdf" target="_blank">Resume</a></li>
+                    <li ><a class="resume-link" href="resume/Resume_Muhammad_Zuhaimi_2026.pdf" target="_blank">Resume</a></li>
                 </ul>
             </nav>
         </header>
         <section class="home" id="home">
             <div class="home-content">
                 <h1> Hi, It's <span> Muhammad</span></h1>
-                <h3 class="text-animation"> I'm a(n) <span></span></h3>
-                <p> I bring experience across software operations, AI prompt engineering, and research, with a focus on improving system reliability, workflow efficiency, and technical quality. My background includes troubleshooting production issues, resolving support tickets, supporting data remediation and database cleanup initiatives, building monitoring and alerting workflows, and designing, testing, and evaluating prompts for large language models. I thrive in fast-paced environments, collaborate effectively across teams, and use tools such as Python, SQL, JavaScript, Splunk, and Jira to deliver practical, reliable solutions.</p>
+                <h3 class="text-animation"> Experienced in <span id="hero-role" aria-live="polite">Software Analysis</span></h3>
+                <p> I am a software analyst and AI evaluation contributor with experience spanning production support, workflow automation, system monitoring, prompt design, and technical research. My work centers on diagnosing issues quickly, stabilizing business-critical processes, translating messy operational problems into practical fixes, and partnering across teams to improve reliability, reporting, and delivery. I bring a consulting-adjacent mindset to technical work: structured analysis, clear communication, and hands-on execution with tools such as Python, SQL, JavaScript, Splunk, Jira, and Bash.</p>
             
                 <div class="social-icons"> 
                     <a href="https://www.linkedin.com/in/muhammad-zuhaimi-b03482170/" target="_blank"><i class='bx bxl-linkedin'></i></a>
@@ -77,11 +77,10 @@
                         <div class="timeline-date"> August, 2022</div>
                         <div class="timeline-content">
                             <h3>Junior Sales Associate</h3>
-                            <p> Employed at Teso Life Carrolton.</p>
-                            <p> Increased sales productivity by 10% through effective multitasking, leading to meeting and
-                                exceeding sales targets consistently.</p>
-                            <p> Increased product visibility and sales potential by 25% through strategic analysis and redesign of
-                                store displays, resulting in a boost in overall store revenue</p>
+                            <p> Teso Life, Carrollton</p>
+                            <p> Strengthened customer-facing communication and day-to-day operational support in a fast-paced retail environment.</p>
+                            <p> Improved sales productivity by 10% through effective multitasking, ownership of floor operations, and consistent execution.</p>
+                            <p> Increased product visibility and sales potential by 25% through layout analysis and display redesign.</p>
                         </div>
                 </div>
                 <div class="timeline-item">
@@ -89,14 +88,10 @@
                         <div class="timeline-date"> January, 2024</div>
                         <div class="timeline-content">
                             <h3>Undergraduate Researcher</h3>
-                            <p> Employed at the University of Texas at Arlington</p>
-                            <p> Implemented Large Language Models (LLMs) to reduce symbolic execution tool runtime by 71.43%,
-                                boosting zero-day vulnerability detection efficiency</p>
-                            <p> Identified memory-related vulnerability patterns in over 50 documented CVEs, leading to
-                                improved understanding of system security.</p>
-                            <p>Streamlined interaction between KLEE and targeted LLMs by creating automation scripts, resulting
-                                in a 71.43% reduction in time spent on manual tasks. This optimization greatly enhanced the
-                                accuracy and speed of research analysis.</p>
+                            <p> University of Texas at Arlington</p>
+                            <p> Integrated LLMs into symbolic execution workflows to improve the speed and quality of vulnerability analysis.</p>
+                            <p> Reduced runtime by 71.43% and analyzed 50+ CVEs to identify memory-related vulnerability patterns.</p>
+                            <p> Built automation around KLEE and targeted LLM workflows, strengthening repeatability, research throughput, and analysis accuracy.</p>
                         </div>
                 </div>
                 <div class="timeline-item">
@@ -104,13 +99,10 @@
                         <div class="timeline-date"> October, 2024</div>
                         <div class="timeline-content">
                             <h3>AI Prompt Engineer</h3>
-                            <p> @ Outlier AI</p>
-                            <p>  Designed and implemented sophisticated prompts and training datasets in Python, enhancing AI 
-                                capabilities in Mathematics and Computer Science applications.</p>
-                            <p>  Collaborated on training AI large language models (LLMS) to improve code generation, 
-                                contributing to cutting-edge generative AI tools.</p>
-                            <p>Developed comprehensive test cases to validate AI-generated code, enhancing performance and 
-                                consistency.</p>
+                            <p> Outlier AI</p>
+                            <p> Designed Python-based prompts and training datasets to improve LLM reasoning quality, response reliability, and code-generation performance.</p>
+                            <p> Supported AI evaluation efforts by refining model behavior, stress-testing outputs, and aligning responses to technical quality expectations.</p>
+                            <p> Developed validation test cases for AI-generated code, improving consistency across evaluation and training workflows.</p>
                         </div>
                 </div>
                 <div class="timeline-item">
@@ -120,19 +112,20 @@
                             <h3>Software Analyst</h3>
                             <p> Paycom </p>
                             <p>
-                                Successfully addressed 500+ Jira tickets, ranging from performing urgent datafixes for mission-critical issues halting the payroll
-                                process to leading large-scale database cleansing initiatives that eliminated 1.5M redundant records to optimize performance.
+                                Resolved 500+ Jira tickets spanning urgent data fixes, production issues, and payroll-impacting support requests, with a focus on fast root-cause analysis and dependable execution.
                             </p>
                             <p>
-                                Collaborated with Site Reliability Engineers to monitor production environments, architecting custom Splunk dashboards and
-                                automated alerting workflows that identify and capture potential anomalies and errors.
+                                Led large-scale data remediation and database cleanup efforts that removed 1.5 million redundant records and improved system performance.
                             </p>
                             <p>
-                                Optimized datafix operations by integrating PHP and Windows Bash scripts, which effectively reduced manual workload by
-                                93.33% and streamlined accurate log analysis to ensure high-precision error detection.
+                                Partnered with Site Reliability Engineers to monitor production environments, build Splunk dashboards, and implement alerting workflows that surfaced anomalies faster.
                             </p>
                             <p>
-                                Supported in nightly on-calls and critical incident calls, providing round-the-clock support and maintaining business continuity.
+                                Automated recurring operational work with PHP and Bash scripting, reducing manual workload by 93.33% while improving log analysis accuracy and turnaround time.
+                            </p>
+                            <p>
+                                Participated in nightly on-call and critical incident support, communicating clearly across teams to maintain business continuity during high-impact issues.
+                            </p>
                         </div>
                 </div>
             </div>
@@ -144,7 +137,7 @@
             <div class="projects-grids">
             
                 <div class="project-card">
-                    <img src="/images/CookingCoach.jpg">
+                    <img src="images/CookingCoach.jpg">
                     <h3> Cooking Coach</h3>
                     <p> As part of a 4-person Agile team, I developed an Android recipe recommendation app using Java and Firebase.
                          This app suggests dishes to users based on the ingredients they have available. I actively contributed to the
@@ -157,7 +150,7 @@
                 </div>
             
                 <div class="project-card">
-                    <img src="/images/FindMyCovid.jpg">
+                    <img src="images/FindMyCovid.jpg">
                     <h3> COVID-19 Tracker</h3>
                     <p> I designed and developed an interactive web application to visualize real-time global COVID-19 data. This 
                         application integrated the Leaflet API and a COVID-19 API to create a dynamic map that displays real-time pandemic statistics at the country level.</p>
@@ -168,7 +161,7 @@
                 </div>
             
                 <div class="project-card">
-                    <img src="/images/Enhancing.jpg">
+                    <img src="images/Enhancing.jpg">
                     <h3> Enhancing Symbolic Execution with LLMs for Vulnerability Detection</h3>
                     <p> I implemented Large Language Models (LLMs) to significantly enhance the efficiency of zero-day vulnerability detection using symbolic execution tools.
                         This integration resulted in a 71.43% reduction in runtime. Furthermore, I analyzed over 50 documented CVEs to identify patterns in memory-related vulnerabilities,
@@ -194,7 +187,7 @@
 
         </footer>
 
-        <script src="script.js"></script>
+        <script src="script.js?v=2026-typewriter-fix"></script>
     </body>
 
 

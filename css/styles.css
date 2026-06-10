@@ -5,18 +5,18 @@
 }
 
 :root{
-    --text-color: #f7fbfc;
-    --main-color: #f2e6d8;
-    --bg-top: #7598ab;
-    --bg-mid: #8fb0bf;
-    --bg-soft: #b7cdc9;
-    --bg-bottom: #dde5dc;
+    --text-color: #f8fafc;
+    --main-color: #f2d7b6;
+    --bg-top: #3f6674;
+    --bg-mid: #6f97a3;
+    --bg-soft: #b8ccc2;
+    --bg-bottom: #edf1e8;
     --surface-light: rgba(255, 255, 255, 0.84);
-    --surface-mid: rgba(255, 255, 255, 0.1);
-    --surface-dark: rgba(73, 92, 106, 0.2);
-    --border-soft: rgba(255, 255, 255, 0.22);
-    --shadow-color: rgba(37, 52, 61, 0.2);
-    --text-dark: #20313b;
+    --surface-mid: rgba(255, 255, 255, 0.12);
+    --surface-dark: rgba(27, 47, 57, 0.26);
+    --border-soft: rgba(255, 255, 255, 0.26);
+    --shadow-color: rgba(24, 42, 50, 0.24);
+    --text-dark: #172a33;
 }
 
 html,body{
@@ -31,6 +31,7 @@ html,body{
         var(--bg-bottom) 100%);
     background-attachment: fixed;
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 
@@ -45,28 +46,36 @@ p, li, a{
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
-    padding: 30px 10%;
+    gap: 1.4rem;
+    width: fit-content;
+    max-width: calc(100% - 3rem);
+    margin: 1rem auto 0;
+    padding: 0.85rem 1rem 0.85rem 1.25rem;
     position: sticky;
-    top: 0;
+    top: 1rem;
     z-index: 10;
-    background: rgba(91, 117, 131, 0.28);
-    backdrop-filter: blur(18px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
-    box-shadow: 0 18px 45px rgba(34, 47, 57, 0.08);
+    background: rgba(80, 108, 123, 0.46);
+    backdrop-filter: blur(22px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 999px;
+    box-shadow: 0 18px 45px rgba(34, 47, 57, 0.16);
 }
 
 .logo {
-    font-size: 3rem;
+    font-size: 1.55rem;
     font-weight: 800;
     transition: 0.3s ease;
     cursor: pointer;
-    margin-right: auto;
+    margin-right: 0;
+    padding-right: 1.4rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.28);
+    white-space: nowrap;
 }
 
 .logo:hover{
-    transform: scale(1.1);
+    transform: translateY(-1px);
 }
 
 .logo span{
@@ -74,33 +83,68 @@ header {
 }
 
 .nav__list{
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav__list li{
-    display: inline-block;
-    font-size: 20px;
-    padding: 0px 10px;
-    transition: all 0.3s ease 0s;
+    display: flex;
+    font-size: 1rem;
+}
+
+.nav__list a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.75rem;
+    padding: 0 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 999px;
+    color: rgba(247, 251, 252, 0.9);
+    background: rgba(255, 255, 255, 0.05);
+    font-weight: 700;
+    transition: transform 0.24s ease, border-color 0.24s ease, background 0.24s ease, color 0.24s ease;
 }
 
 .nav__list a:hover,
 .nav__list a.active{
-    color: var(--main-color);
-    border-bottom: 3px solid var(--main-color);
+    color: var(--text-color);
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(242, 230, 216, 0.65);
+    transform: translateY(-1px);
+}
+
+.nav__list .resume-link{
+    color: var(--text-dark);
+    background: var(--main-color);
+    border-color: transparent;
+    box-shadow: 0 10px 28px rgba(242, 230, 216, 0.22);
+}
+
+.nav__list .resume-link:hover{
+    color: var(--text-dark);
+    background: #fff3e4;
+    box-shadow: 0 12px 32px rgba(242, 230, 216, 0.34);
 }
 
 section{
     min-height: 100vh;
-    padding: 10rem 12% 10rem;
+    padding: 7rem 8% 8rem;
     position: relative;
 }
 
 .home{
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(220px, 0.85fr);
     align-items: center;
     justify-content: center;
-    gap: 15rem;
+    gap: clamp(2rem, 6vw, 5rem);
+    min-height: calc(100vh - 6rem);
+    padding-top: 5.5rem;
 }
 
 .home::after,
@@ -125,7 +169,8 @@ footer::before{
     align-items: baseline;
     text-align: left;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 0;
+    min-width: 0;
     position: relative;
     z-index: 1;
 }
@@ -146,7 +191,7 @@ span{
 }
 
 .home-content h1{
-    font-size: clamp(3rem, 10vw, 7rem);
+    font-size: clamp(3.25rem, 8vw, 6.3rem);
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
@@ -162,8 +207,8 @@ span{
 
 .home-img img{
     position: relative;
-    top: 3rem;
-    width: 32vw;
+    top: 0;
+    width: min(30vw, 360px);
     border-radius: 50%;
     box-shadow: 0 20px 45px rgba(29, 42, 50, 0.22), 0 0 25px rgba(242, 230, 216, 0.45);
     cursor: pointer;
@@ -244,16 +289,41 @@ span{
     color: var(--text-dark);
 }
 
-.text-animation{
-    font-size: clamp(1.5rem, 4vw, 34px);
+.home-content .text-animation{
+    font-size: 2.6rem;
     font-weight: 600;
     min-width: 200px;
+    line-height: 1.2;
+    max-width: 100%;
+    white-space: nowrap;
 }
 
-.text-animation span{
+#hero-role{
     position: relative;
+    display: inline-block;
+    color: var(--main-color);
+    min-width: 18ch;
+    vertical-align: bottom;
 }
 
+#hero-role::before{
+    content: none;
+    animation: none;
+}
+
+#hero-role::after{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 0.9em;
+    margin-left: 0.08em;
+    background: var(--main-color);
+    border: 0;
+    vertical-align: -0.08em;
+    animation: hero-cursor 0.8s steps(1) infinite;
+}
+
+/* Legacy CSS-only hero title rotator retained for reuse if JavaScript is removed later.
 .text-animation span:before{
     content: "Aspiring Software Developer";
     color: var(--main-color);
@@ -324,6 +394,18 @@ span{
         width: calc(100% + 8px);
     }
 
+}
+*/
+
+@keyframes hero-cursor{
+    0%,
+    49%{
+        opacity: 1;
+    }
+    50%,
+    100%{
+        opacity: 0;
+    }
 }
 
 .heading{
@@ -440,10 +522,10 @@ span{
 .projects-grids{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    gap: 2rem;
+    gap: 4rem 2.25rem;
     position: relative;
     z-index: 1;
-    align-items: stretch;
+    align-items: start;
 }
 
 .Projects::before{
@@ -457,7 +539,7 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     gap: 1.5rem;
     background: var(--surface-dark);
@@ -468,13 +550,13 @@ span{
     box-shadow: 0 18px 36px rgba(34, 47, 57, 0.14);
     backdrop-filter: blur(10px);
     min-width: 0;
-    height: 100%;
+    height: auto;
 }
 
 .project-card:hover{
     background-color: rgba(73, 92, 106, 0.34);
     color: white;
-    transform: translateY(-10px)scale(1.02);
+    transform: translateY(-8px);
     box-shadow: 0 24px 44px rgba(34, 47, 57, 0.18);
 }
 .project-card img{
@@ -572,33 +654,55 @@ footer ul li a{
     font-weight: 600;
 }
 
-@media (max-width: 1100px){
+@media (max-width: 760px){
     header{
         flex-wrap: wrap;
         justify-content: center;
-        gap: 1.5rem;
-        padding: 24px 6%;
+        gap: 0.85rem;
+        width: min(760px, calc(100% - 2rem));
+        padding: 0.9rem;
+        border-radius: 1.5rem;
     }
 
     .logo{
-        margin-right: 0;
         text-align: center;
+        width: 100%;
+        padding: 0 0 0.75rem;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.22);
     }
 
     .nav__list{
-        display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 0.75rem 1.5rem;
-        padding: 0;
-        margin: 0;
+        gap: 0.55rem;
     }
 
+    .nav__list a{
+        min-height: 2.55rem;
+        padding: 0 0.85rem;
+    }
+
+    .home-content .text-animation{
+        font-size: 2rem;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 900px){
     .home{
-        flex-direction: column-reverse;
-        gap: 3rem;
-        padding-top: 6rem;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding-top: 4.5rem;
         text-align: center;
+    }
+
+    .home-img{
+        order: -1;
+    }
+
+    .home-img img{
+        width: min(58vw, 280px);
     }
 
     .home-content{
@@ -609,17 +713,11 @@ footer ul li a{
         min-width: 0;
     }
 
-    .text-animation{
+    .home-content .text-animation{
+        font-size: 1.8rem;
         min-width: 0;
     }
 
-    .home-img img{
-        width: min(70vw, 320px);
-        top: 0;
-    }
-}
-
-@media (max-width: 900px){
     .projects-grids{
         grid-template-columns: 1fr;
     }
@@ -646,5 +744,11 @@ footer ul li a{
     .project-links-stack .btn{
         width: min(100%, 18rem);
         justify-self: center;
+    }
+}
+
+@media (max-width: 520px){
+    .home-content .text-animation{
+        font-size: 1.25rem;
     }
 }
