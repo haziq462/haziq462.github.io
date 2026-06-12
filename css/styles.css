@@ -560,7 +560,9 @@ span{
     box-shadow: 0 24px 44px rgba(34, 47, 57, 0.18);
 }
 .project-card img{
-    width: min(100%, 20vw);
+    width: min(100%, 24rem);
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     border-radius: 1rem;
     box-shadow: 0 14px 28px rgba(23, 32, 39, 0.2);
 }
